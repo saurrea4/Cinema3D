@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de información personal</title>
-    <!-- Hoja de estilos de Bootstrap 5 -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Hoja de estilos de Bootstrap 5.3.8 -->
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         :root {
             --bs-primary: #173b63;
@@ -73,9 +73,12 @@
     </style>
 </head>
 <body>
+
+    <!-- El container centra el contenido y limita su ancho en pantallas grandes; py-5 agrega espacio vertical. -->
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
+                
                 <!-- Título y Subtítulo -->
                 <h1 class="page-title text-center mb-3">Registro de información personal</h1>
                 <p class="page-subtitle text-center mb-5">
@@ -83,7 +86,7 @@
                 </p>
 
                 <!-- Tarjeta del Formulario Financiero -->
-                <div class="card finance-card">
+                <div class="card finance-card mb-5">
                     <div class="card-body p-4">
                         <form id="formularioBootstrap">
                             <!-- Nombres -->
@@ -136,7 +139,7 @@
                                 </div>
                             </div>
 
-                            <!-- Géneros de cine -->
+                            <!-- Géneros de cine (Checkboxes en rejilla de 3 columnas) -->
                             <div class="mb-4">
                                 <label class="form-label d-block">Géneros de cine que prefiere:</label>
                                 <div class="row">
@@ -183,12 +186,11 @@
                     </div>
                 </div>
 
-                <!-- Zona de resultados -->
-                <div id="resultados" class="mt-5" style="display: none;">
-                    <div class="card finance-card results-card" style="border-color: #11766f;">
-                        <div class="card-header text-white">
-                            <h5 class="mb-0">Respuestas seleccionadas</h5>
-                        </div>
-                        <div class="card-body" id="contenidoResultados"></div>
-                    </div>
-
+               <!-- Zona de resultados --> 
+<div id="resultados" class="mt-5" style="display: none;"> 
+    <div class="card border-success finance-card results-card"> 
+        <div class="card-header bg-success text-white"> 
+            <h5 class="mb-0">Respuestas seleccionadas</h5> 
+        </div> 
+        <div class="card-body" id="contenidoResultados"></div> 
+    </div
