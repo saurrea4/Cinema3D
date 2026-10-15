@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Registro de información personal</title> 
     <!-- Hoja de estilos de Bootstrap 5 --> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
     <style> 
         :root { 
             --bs-primary: #173b63; 
@@ -97,7 +97,7 @@
                     Interfaz clara y confiable, inspirada en la identidad visual del sector financiero. 
                 </p> 
                  
-                <!-- Formulario integrado --> 
+                <!-- Tarjeta del Formulario Financiero --> 
                 <div class="card finance-card"> 
                     <div class="card-body p-4"> 
                         <form id="formularioBootstrap"> 
@@ -125,13 +125,72 @@
                                 <input type="number" class="form-control" id="ninos" name="ninos" min="0" value="0" required> 
                             </div> 
                              
-                            <!-- Siguientes campos aquí... --> 
-                        </form> 
-                    </div> 
-                </div> 
+                            <!-- Madre cabeza de familia (Radio Inline) --> 
+                            <div class="mb-3"> 
+                                <label class="form-label d-block">¿Es madre cabeza de familia?</label> 
+                                <div class="form-check form-check-inline"> 
+                                    <input class="form-check-input" type="radio" name="madreCabeza" id="madreSi" value="Sí"> 
+                                    <label class="form-check-label" for="madreSi">Sí</label> 
+                                </div> 
+                                <div class="form-check form-check-inline"> 
+                                    <input class="form-check-input" type="radio" name="madreCabeza" id="madreNo" value="No" checked> 
+                                    <label class="form-check-label" for="madreNo">No</label> 
+                                </div> 
+                            </div> 
                  
+                            <!-- Técnico o Tecnólogo (Radio Inline) --> 
+                            <div class="mb-3"> 
+                                <label class="form-label d-block">¿Está realizando un técnico o tecnólogo?</label> 
+                                <div class="form-check form-check-inline"> 
+                                    <input class="form-check-input" type="radio" name="estudio" id="estudioSi" value="Sí"> 
+                                    <label class="form-check-label" for="estudioSi">Sí</label> 
+                                </div> 
+                                <div class="form-check form-check-inline"> 
+                                    <input class="form-check-input" type="radio" name="estudio" id="estudioNo" value="No" checked> 
+                                    <label class="form-check-label" for="estudioNo">No</label> 
+                                </div> 
+                            </div> 
+                 
+                            <!-- Géneros de cine (Checkboxes en rejilla 3 columnas) --> 
+                            <div class="mb-4"> 
+                                <label class="form-label d-block">Géneros de cine que prefiere:</label> 
+                                <div class="row"> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" name="generos" value="Acción" id="accion"> 
+                                            <label class="form-check-label" for="accion">Acción</label> 
+                                        </div> 
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" name="generos" value="Comedia" id="comedia"> 
+                                            <label class="form-check-label" for="comedia">Comedia</label> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" name="generos" value="Drama" id="drama"> 
+                                            <label class="form-check-label" for="drama">Drama</label> 
+                                        </div> 
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" name="generos" value="Terror" id="terror"> 
+                                            <label class="form-check-label" for="terror">Terror</label> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" name="generos" value="Ciencia Ficción" id="scifi"> 
+                                            <label class="form-check-label" for="scifi">Ciencia Ficción</label> 
+                                        </div> 
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" name="generos" value="Romance" id="romance"> 
+                                            <label class="form-check-label" for="romance">Romance</label> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                 
+                            <!-- Botón de Envío --> 
+            <div class="d-grid"> 
+                <button type="submit" class="btn btn-primary btn-lg"> 
+                    Enviar y mostrar respuestas 
+                </button> 
             </div> 
-        </div> 
-    </div> 
-</body> 
-</html>
